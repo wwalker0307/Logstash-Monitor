@@ -1,0 +1,33 @@
+<Config>
+    <CheckInterval>300</CheckInterval>
+    <Elasticsearch>
+        <Host>server.contoso.com</Host>
+        <Port>9200</Port>
+        <Protocol>https</Protocol>
+        <API_Key>123-456_abc</API_Key>
+        <API_Id>12-345abc</API_Id>
+    </Elasticsearch>
+    <Logstash>
+        <Host>server.contoso.com</Host>
+        <Port>9600</Port>
+        <Protocol>http</Protocol>
+    </Logstash>
+    <SMTP>
+        <Enable>1</Enable>
+        <Server>mail.contoso.com</Server>
+        <Port>25</Port>
+        <From>ElasticStack@contoso.com</From>
+        <To>"sysadmin@contoso.com"</To>
+    </SMTP>
+    <Logging>
+        <Enabled>1</Enabled>
+        <Retain>1</Retain>
+        <Rotation>
+            <Enabled>1</Enabled>
+            <Type>Both</Type>
+            <Size>5</Size>
+            <Age>1</Age>
+        </Rotation>
+        <Folder>D:\Logstash\logs</Folder>
+    </Logging>
+</Config>
